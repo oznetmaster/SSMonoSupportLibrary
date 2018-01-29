@@ -1,0 +1,126 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9243C5F9-8D8B-4A3C-B855-E339D451244F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoSupportLibrary</RootNamespace>
+    <AssemblyName>SSMonoSupportLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>NETCF NETCF_3_5 SSHARP NET_2_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+    <DefineConstants>NETCF NETCF_3_5 SSHARP NET_2_0</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5542.22550, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowsableAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeAccessPermission_2_1.cs" />
+    <Compile Include="CodeAccessSecurityAttribute.cs" />
+    <Compile Include="DefaultEventAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DescriptionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmptyArray.cs" />
+    <Compile Include="Environment.cs" />
+    <Compile Include="EnvironmentPermissionAttribute.cs" />
+    <Compile Include="EnvironmentVariableTarget.cs" />
+    <Compile Include="ICallbackEventHandler.cs" />
+    <Compile Include="IPermission.cs" />
+    <Compile Include="ISecurityEncodable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISynchronizeInvoke.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IUnrestrictedPermission.cs" />
+    <Compile Include="Locale.cs" />
+    <Compile Include="MarshalByRefObject.cs" />
+    <Compile Include="MonoTODOAttribute.cs" />
+    <Compile Include="OperatingSystem.cs" />
+    <Compile Include="PermissionHelper.cs" />
+    <Compile Include="PermissionState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityAction.cs" />
+    <Compile Include="SecurityAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityCriticalAttribute.cs" />
+    <Compile Include="SecurityCriticalScope.cs" />
+    <Compile Include="SecurityElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecurityPermissionAttribute.cs" />
+    <Compile Include="SecurityPermissionFlag.cs" />
+    <Compile Include="ThreadStaticAttribute.cs" />
+    <Compile Include="TryParsers.cs" />
+    <Compile Include="XmlChar.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

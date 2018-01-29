@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSMonoSupportLibrary", "SSMonoSupportLibrary.csproj", "{9243C5F9-8D8B-4A3C-B855-E339D451244F}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = SSMonoSupportLibrary.csproj
+		SccProjectName0 = $/S#\u0020Libraries/Mono\u0020Ports/SSMonoSupportLibrary
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:SourceGear\u0020Vault\u0020Professional\u0020Classic\u0020Client
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9243C5F9-8D8B-4A3C-B855-E339D451244F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9243C5F9-8D8B-4A3C-B855-E339D451244F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9243C5F9-8D8B-4A3C-B855-E339D451244F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9243C5F9-8D8B-4A3C-B855-E339D451244F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
