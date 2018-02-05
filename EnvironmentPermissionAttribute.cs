@@ -48,12 +48,7 @@ namespace System.Security.Permissions
 			 AttributeTargets.Struct | AttributeTargets.Constructor |
 			 AttributeTargets.Method, AllowMultiple = true, Inherited = false)]
 	[Serializable]
-	public sealed class EnvironmentPermissionAttribute
-#if NETCF
-		: Attribute
-#else
-		: CodeAccessSecurityAttribute
-#endif
+	public sealed class EnvironmentPermissionAttribute : CodeAccessSecurityAttribute
 		{
 
 		// Fields
@@ -62,9 +57,7 @@ namespace System.Security.Permissions
 
 		// Constructor
 		public EnvironmentPermissionAttribute (SecurityAction action)
-#if !NETCF
 			: base (action)
-#endif
 			{
 			}
 
@@ -92,7 +85,6 @@ namespace System.Security.Permissions
 			}
 
 		// Methods
-#if !NETCF
 		public override IPermission CreatePermission ()
 			{
 #if NET_2_1
@@ -112,6 +104,5 @@ namespace System.Security.Permissions
 			return perm;
 #endif
 			}
-#endif
 		}
 	}

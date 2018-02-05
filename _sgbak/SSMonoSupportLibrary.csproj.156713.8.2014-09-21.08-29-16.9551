@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SSMonoSupportLibrary</RootNamespace>
     <AssemblyName>SSMonoSupportLibrary</AssemblyName>
-    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PlatformFamilyName>WindowsCE</PlatformFamilyName>
     <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
     <OSVersion>5.0</OSVersion>
@@ -28,29 +28,24 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>NETCF NETCF_3_5 SSHARP NET_2_0</DefineConstants>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF NETCF_3_5 SSHARP NET_2_0</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <FileAlignment>512</FileAlignment>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <FileAlignment>512</FileAlignment>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
-    <DefineConstants>NETCF NETCF_3_5 SSHARP NET_2_0</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -62,7 +57,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
     </Reference>
-    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5542.22550, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5303.33300, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
     </Reference>
@@ -71,59 +66,58 @@
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrowsableAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CodeAccessPermission_2_1.cs" />
-    <Compile Include="CodeAccessSecurityAttribute.cs" />
-    <Compile Include="DefaultEventAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DescriptionAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="BrowsableAttribute.cs" />
+    <Compile Include="CharSet.cs" />
+    <Compile Include="ClassInterfaceAttribute.cs" />
+    <Compile Include="ClassInterfaceType.cs" />
+    <Compile Include="CLSCompliantAttribute.cs" />
+    <Compile Include="ComDefaultInterfaceAttribute.cs" />
+    <Compile Include="ComVisible.cs" />
+    <Compile Include="DateTimeOffset.cs" />
+    <Compile Include="DateTimeUtils.cs" />
+    <Compile Include="DefaultEventAttribute.cs" />
+    <Compile Include="DescriptionAttribute.cs" />
+    <Compile Include="EditorBrowsableAttribute.cs" />
+    <Compile Include="EditorBrowsableState.cs" />
     <Compile Include="EmptyArray.cs" />
     <Compile Include="Environment.cs" />
-    <Compile Include="EnvironmentPermission.cs" />
-    <Compile Include="EnvironmentPermissionAccess.cs" />
     <Compile Include="EnvironmentPermissionAttribute.cs" />
-    <Compile Include="EnvironmentVariableTarget.cs" />
-    <Compile Include="IBuiltInPermission.cs" />
-    <Compile Include="ICallbackEventHandler.cs" />
-    <Compile Include="IPermission.cs" />
-    <Compile Include="ISecurityEncodable.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ISynchronizeInvoke.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="IUnrestrictedPermission.cs" />
+    <Compile Include="GuidAttribute.cs" />
+    <Compile Include="ISynchronizeInvoke.cs" />
+    <Compile Include="LayoutKind.cs" />
     <Compile Include="Locale.cs" />
+    <Compile Include="MarshalAsAttribute.cs" />
     <Compile Include="MarshalByRefObject.cs" />
-    <Compile Include="MonoTODOAttribute.cs" />
+    <Compile Include="MethodCodeType.cs" />
+    <Compile Include="MethodImplAttribute.cs" />
+    <Compile Include="MethodImplOptions.cs" />
+    <Compile Include="MonoLimitation.cs" />
     <Compile Include="OperatingSystem.cs" />
-    <Compile Include="PermissionHelper.cs" />
-    <Compile Include="PermissionState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecurityAction.cs" />
-    <Compile Include="SecurityAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SecurityCriticalAttribute.cs" />
-    <Compile Include="SecurityCriticalScope.cs" />
-    <Compile Include="SecurityElement.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SecurityPermissionAttribute.cs" />
-    <Compile Include="SecurityPermissionFlag.cs" />
+    <Compile Include="StructLayoutAttribute.cs" />
     <Compile Include="ThreadStaticAttribute.cs" />
     <Compile Include="TryParsers.cs" />
+    <Compile Include="UnmanagedType.cs" />
+    <Compile Include="VarEnum.cs" />
     <Compile Include="XmlChar.cs" />
     <None Include="Properties\ControlSystem.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
+      <FlavorProperties GUID="{0B4745B0-194B-4BB6-8E21-E9057CA92500}">
+        <ProgramIdTag>SSMonoSupportLibrary</ProgramIdTag>
+        <SystemName>SSMonoSupportLibrary</SystemName>
+        <Programmer />
+        <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoSupportLibrary\bin\SSMonoSupportLibrary.clz</ArchiveFilename>
+        <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
+        <CompiledOn>9/13/2014 7:52:07 AM</CompiledOn>
+        <AdditionalInfo />
+        <EmbedSourceArchive>False</EmbedSourceArchive>
+        <CopyTo />
+        <OriginalReferenceSources />
+      </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
 </Project>
