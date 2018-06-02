@@ -9,4 +9,5 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo ("SSMonoWebUILibrary")]
 [assembly: InternalsVisibleTo ("SSMonoNetworkInformationLibrary")]
+[assembly: InternalsVisibleTo ("SSMonoNetMailLibrary")]
 
