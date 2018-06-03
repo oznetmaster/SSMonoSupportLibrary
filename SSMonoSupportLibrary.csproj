@@ -114,6 +114,7 @@
     <Compile Include="SecurityElement.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SecurityPermission.cs" />
     <Compile Include="SecurityPermissionAttribute.cs" />
     <Compile Include="SecurityPermissionFlag.cs" />
     <Compile Include="ThreadStaticAttribute.cs" />

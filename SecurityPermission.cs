@@ -34,10 +34,9 @@ using System;
 using System.Globalization;
 #if SSHARP
 using SSMono;
-using SSMono.Runtime.InteropServices;
 #else
-using System.Runtime.InteropServices;
 #endif
+using System.Runtime.InteropServices;
 
 #if SSHARP
 namespace SSMono.Security.Permissions
@@ -165,8 +164,7 @@ namespace System.Security.Permissions
 					}
 				else
 					{
-					flags = (SecurityPermissionFlag)Enum.Parse (
-						typeof (SecurityPermissionFlag), f);
+					flags = (SecurityPermissionFlag)Enum.Parse (typeof (SecurityPermissionFlag), f, false);
 					}
 				}
 			}
