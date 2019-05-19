@@ -350,5 +350,25 @@ namespace SSMono
 			result = default (DateTime);
 			return false;
 			}
+
+		public static bool TimeSpanTryParse (string s, out TimeSpan result)
+			{
+			if (String.IsNullOrEmpty (s))
+				{
+				result = default (TimeSpan);
+				return false;
+				}
+
+			try
+				{
+				result = TimeSpan.Parse (s);
+				return true;
+				}
+			catch (Exception)
+				{
+				result = default (TimeSpan);
+				return false;
+				}
+			}
 		}
 	}
